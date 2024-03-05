@@ -61,11 +61,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Tampilan WEB
-![image](https://github.com/Muhrafli49/Movies-List/assets/99025267/b54d2e2f-0b4d-44af-a1ed-09f8ecd949fa)
-
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Tampilan WEB
+![image](https://github.com/Muhrafli49/Movies-List/assets/99025267/b54d2e2f-0b4d-44af-a1ed-09f8ecd949fa)
+![image](https://github.com/Muhrafli49/Movies-List/assets/99025267/7e8a4c50-b32a-4bf9-9f7e-08aca9da0279)
+
+
