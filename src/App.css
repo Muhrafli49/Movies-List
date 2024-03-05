@@ -1,0 +1,153 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #e50914;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #e50914;
+}
+
+/* Movie styles */
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px; /* Tambahkan lebih banyak padding */
+  background-color: #141414;
+}
+
+/* Movie-wrapper Styling */
+.Movie-wrapper {
+  width: 100%;
+  max-width: 300px;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Lebih tebal dan smooth shadow */
+  padding: 8px;
+  transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.Movie-wrapper:hover {
+  transform: scale(1.05); /* Memperbesar ukuran saat hover */
+}
+
+.Movie-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan shadow */
+  transition: transform 0.3s ease-in-out; /* Efek transisi saat hover */
+}
+
+.Movie-wrapper:hover .Movie-image {
+  transform: scale(1.1); /* Memperbesar ukuran saat hover */
+}
+
+.Movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 16px; /* Mengurangi jarak antara placeholder dan judul */
+  padding: 16px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #1f1f1f;
+  color: white;
+  border-radius: 15px;
+}
+
+.Movie-search:focus {
+  outline: none; /* Hapus outline default pada fokus */
+  border-color: #e50914; /* Warna border saat fokus */
+  box-shadow: 0 0 8px rgba(229, 9, 20, 0.5); /* Efek shadow saat fokus */
+}
+
+.Movie-search::placeholder {
+  color: #b9b9b9; /* Warna placeholder */
+  font-weight: normal; /* Ganti berat font pada placeholder */
+  opacity: 0.7; /* Kurangi kecerahan placeholder */
+}
+
+/* Movie-search Focus Styling */
+.Movie-search:focus::placeholder {
+  opacity: 0.5; /* Kurangi kecerahan placeholder saat fokus */
+}
+
+.Movie-title {
+  margin-top: 8px;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.Movie-title:hover {
+  color: #e50914;
+  cursor: pointer; /* Ganti kursor saat hover */
+}
+
+.Movie-date {
+  font-size: 14px;
+  color: #b9b9b9;
+  margin-top: 4px;
+}
+
+/* Movie Rating Styling */
+.Movie-rate {
+  font-size: 20px;
+  color: #e50914;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+/* Icon for Rating */
+.Movie-rate:before {
+  content: "\2605";
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #e50914;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .Movie-container {
+    padding: 0;
+  }
+}
